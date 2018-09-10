@@ -1,0 +1,96 @@
+\documentclass[10pt,foldmark,notumble]{leaflet}
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{xcolor}
+\usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\let\TeX=\ptmTeX
+\let\LaTeX=\ptmLaTeX
+\usepackage{shortvrb}
+\MakeShortVerb{\|}
+\usepackage{url}
+\usepackage{graphicx}
+%\usepackage{lipsum}
+%\usepackage{blindtext}
+
+%%%%\renewcommand{\descfont}{\normalfont}
+\newcommand\Lpack[1]{\textsf{#1}}
+\newcommand\Lclass[1]{\textsf{#1}}
+\newcommand\Lopt[1]{\texttt{#1}}
+\newcommand\Lprog[1]{\textit{#1}}
+\definecolor{LIGHTGRAY}{gray}{.8}
+
+\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+
+\title{Party Parrot Sauce}
+\author{Hot Sauce}
+\date{Bottled on: 08 Sept 2018}
+
+\CutLine*{1}% Dotted line without scissors
+\CutLine*{6}% Remove * for scissors
+
+%\AddToBackground{1}{%  Background of a small page
+%  \put(0,0){\textcolor{Cerulean}{\rule{\paperwidth}{\paperheight}}}}
+
+
+\AddToBackground{1}{%  Background of a small page
+  \put(115,530){\includegraphics[scale=1.15]{images/parrot-2.png}}}
+
+
+%\AddToBackground{6}{%  Background of a small page
+%  \put(0,0){\textcolor{YellowOrange}{\rule{\paperwidth}{\paperheight}}}}
+
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\section{About this Hot Sauce \color{red}\hrulefill\color{black}}
+This hot sauce is made in small batches by hand, using only fresh,
+local ingredients. The Ghost Peppers used in this sauce were
+hand-picked from Tom Swartz's own pepper plant, right on his back porch.
+
+This sauce was specially formulated to be just the perfect balance of
+sweet, spicy, and tangy.\\
+The red flecks in the sauce are the Ghost Peppers.
+
+If this sauce turns to to be too spicy for you,
+the best solution would be to chase it with a fresh banana or a glass of milk.
+
+\section{Hot Sauce Ingredients: \color{red}\hrulefill\color{black}}
+\begin{itemize}
+        \item Ghost Pepper
+        \item Habanero Pepper
+        \item Jalapeno Pepper
+        \item Anaheim Pepper
+        \item Mango
+        \item Carrot
+        \item Apple Cider Vinegar
+        \item Ginger
+        \item Garlic
+        \item Sea Salt
+        \item Lime Juice
+        \item Honey
+\end{itemize}
+
+
+\end{document}
